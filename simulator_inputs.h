@@ -1,0 +1,76 @@
+/*
+ * simulator_inputs.h
+ *
+ *  Created on: Mar 23, 2016
+ *      Author: saroj
+ */
+
+#ifndef SIMULATOR_INPUTS_H_
+#define SIMULATOR_INPUTS_H_
+
+#include "cn2simulator.h"
+
+/*
+ * Input Parameters from the users
+ */
+
+//#define MAX_FILE_NAME_SIZE 50
+
+//Input Rates for all queues
+
+//Link 1
+int INPUT_LINK1_QUEUE1_SPEED; //(Lambda1_q1)
+int INPUT_LINK1_QUEUE2_SPEED; //(Lambda1_q2)
+
+//Link 2
+int INPUT_LINK2_QUEUE1_SPEED; //(Lambda2_q1)
+int INPUT_LINK2_QUEUE2_SPEED; //(Lambda2_q2)
+
+//Link 3
+int INPUT_LINK3_QUEUE1_SPEED; //(Lambda3_q1)
+int INPUT_LINK3_QUEUE2_SPEED; //(Lambda3_q2)
+
+//Mean Packet Size for all queues
+
+//Link 1
+int INPUT_LINK1_QUEUE1_MEAN_PKT_SIZE;
+int INPUT_LINK1_QUEUE2_MEAN_PKT_SIZE;
+
+//Link 2
+int INPUT_LINK2_QUEUE1_MEAN_PKT_SIZE;
+int INPUT_LINK2_QUEUE2_MEAN_PKT_SIZE;
+
+//Link 3
+int INPUT_LINK3_QUEUE1_MEAN_PKT_SIZE;
+int INPUT_LINK3_QUEUE2_MEAN_PKT_SIZE;
+
+//Output Rates For All Queues
+
+//Link 1
+int OUTPUT_LINK1_QUEUE1_SPEED; //Ts1_q1
+int OUTPUT_LINK1_QUEUE2_SPEED; //Ts1_q2
+
+//Link 2
+int OUTPUT_LINK2_QUEUE1_SPEED; //Ts2_q1
+int OUTPUT_LINK2_QUEUE2_SPEED; //Ts2_q2
+
+//Link 3
+int OUTPUT_LINK3_QUEUE1_SPEED; //Ts3_q1
+int OUTPUT_LINK3_QUEUE2_SPEED; //Ts3_q2
+
+//Input File Names
+char INPUT_FILE1_NAME[MAX_FILE_NAME_SIZE];
+char INPUT_FILE2_NAME[MAX_FILE_NAME_SIZE];
+char INPUT_FILE3_NAME[MAX_FILE_NAME_SIZE];
+
+//Output File Names
+char IPV4_OUTPUT_FILE1_NAME[MAX_FILE_NAME_SIZE];
+char IPV4_OUTPUT_FILE2_NAME[MAX_FILE_NAME_SIZE];
+char IPV4_OUTPUT_FILE3_NAME[MAX_FILE_NAME_SIZE];
+
+char IPV4_ROUTING_TBL_NAME[MAX_FILE_NAME_SIZE];
+char IPV6_ROUTING_TBL_NAME[MAX_FILE_NAME_SIZE];
+
+
+
+#endif /* SIMULATOR_INPUTS_H_ */
